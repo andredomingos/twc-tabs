@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>ODEON</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    <style type="text/css">
+      #outlook a { padding: 0;}
+      .ReadMsgBody { width: 100%;}
+      .ExternalClass { width: 100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+      body {
+        margin: 0 auto; padding: 0; width: 100% !important; height: 100% !important;
+        background-repeat: no-repeat;
+        background-color: #001237;
+      }
+      table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+      img { -ms-interpolation-mode: bicubic; }
+      body { height: 100% !important; margin: 0; padding: 0; width: 100% !important; }
+      img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none;}
+      table { border-collapse: collapse !important;}
+      a[x-apple-data-detectors] {color: inherit !important; text-decoration: none !important; font-size: inherit !important;
+      font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important;
+      }
+    </style>
+    <style type="text/css">
+      @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      .webkit {display:block !important}
+      .action-films       {display:none;}
+      .romance-films      {display:none;}
+      .drama-films        {display:none;}
+      .family-films       {display:none;}
+      .actionBanner       {display:none;}
+      .reset-button       {display:none;}
+      #action:checked ~ #film-selector .action-films {display:block !important;}
+      #action:checked ~ #film-selector .reset-button {display:block !important;}
+      #action:checked ~ #film-selector .films div:not(.action-films) {display:none !important;}
+      #action:checked ~ #film-selector #selector-tiles {display:none; !important;}
+      #romance:checked ~ #film-selector .romance-films {display:block !important;}
+      #romance:checked ~ #film-selector .reset-button {display:block !important;}
+      #romance:checked ~ #film-selector .films div:not(.romance-films) {display:none !important;}
+      #romance:checked ~ #film-selector #selector-tiles {display:none; !important;}
+      #drama:checked ~ #film-selector .drama-films {display:block !important;}
+      #drama:checked ~ #film-selector .reset-button {display:block !important;}
+      #drama:checked ~ #film-selector .films div:not(.drama-films) {display:none !important;}
+      #drama:checked ~ #film-selector #selector-tiles {display:none; !important;}
+      #family:checked ~ #film-selector .family-films {display:block !important;}
+      #family:checked ~ #film-selector .reset-button {display:block !important;}
+      #family:checked ~ #film-selector .films div:not(.family-films) {display:none !important;}
+      #family:checked ~ #film-selector #selector-tiles {display:none; !important;}
+      #reset:checked ~ #film-selector #selector-tiles {display:table; !important;}
+      }
+    </style>
+    <style type="text/css">
+      @media screen yahoo {
+      .webkit {
+      display: none; max-height:0; overflow:hidden; mso-hide:all;
+      }
+      }
+    </style>
+    <style type="text/css">
+      [owa] .webkit { display:none !important; max-height:0 !important; overflow:hidden !important; mso-hide:all !important;}
+    </style>
+    <style>
+      @media screen and (max-width: 540px) {
+      .hide             {display:none !important; }
+      .responsive_table {width:100% !important; max-width:100% !important; height:auto !important; }
+      .w25              {width:50% !important;}
+      .w50              {width:50% !important;}
+      .w75              {width:75% !important;}
+      .no_padding       {padding:0 0 0 0 !important;}
+      .p05305           {padding:0 5% 30px 5% !important;}
+      .p0505            {padding:0 5% 0 5% !important;}
+      .p30505           {padding:30px 5% 0 5% !important;}
+      .widthZero        {width:0px !important;}
+      .fluid            {width:100% !important; max-width:100% !important; height:auto !important;}
+      .fluid98          {width:98% !important; max-width:98% !important; height:auto !important;}
+      .p00200           {padding:0 0 20px 0 !important;}
+      .p30000           {padding:30px 0 0 0 !important;}
+      .poster           {width:250px !important;}
+      }
+      @media screen and (max-width: 340px) {
+      .w50              {width:100% !important}
+      .w75              {width:100% !important;}
+      .poster           {width:75% !important}
+      .stars            {display:none !important}
+      }
+    </style>
+    <style type="text/css">
+    u + .body section .webkit {
+        display:none !important;
+        height:0 !important;
+        overflow: hidden !important;
+    }
+    u + .body > .webkit {
+        display:none !important;
+        height:0 !important;
+        overflow: hidden !important;
+    }
+    </style>
+  </head>
+  <body class="body">
+    <div style="background-color:#001237;">
+      <!--[if gte mso 9]>
+      <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+        <v:fill type="fill" src="http://dev.two-uk.com/tr/concepts/TGW_Odeon_Background_Desktop.jpg" color="#001237"/>
+      </v:background>
+      <![endif]-->
+      <table height="1200px" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#001237" style="background-color:#001237">
+        <tr>
+          <td valign="top" align="center" background="http://dev.two-uk.com/tr/concepts/TGW_Odeon_Background_Desktop.jpg" style="background-image:url(http://dev.two-uk.com/tr/concepts/TGW_Odeon_Background_Desktop.jpg); background-size:100%;background-repeat:no-repeat">
+            <!--[if !mso]><!-->
+            <input id="action" type="radio" name="films" style="display:none !important; max-height:0; visibility:hidden; mso-hide:all;">
+            <input id="romance" type="radio" name="films" style="display:none !important; max-height:0; visibility:hidden; mso-hide:all;">
+            <input id="drama" type="radio" name="films" style="display:none !important; max-height:0; visibility:hidden; mso-hide:all;">
+            <input id="family" type="radio" name="films" style="display:none !important; max-height:0; visibility:hidden; mso-hide:all;">
+            <input id="reset" type="radio" name="films" style="display:none !important; max-height:0; visibility:hidden; mso-hide:all;">
+            <!--<![endif]-->
+            <!--FULL BLEED CONTAINER START-->
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#001237" style="background-color:#001237">
+              <tr>
+                <td align="center" style="padding:15px 15px; font-family: 'Ubuntu', sans-serif; font-size:10px; line-height:14px; color:#ffffff">Check out the newest films showing in Epsom!&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" target="_blank" style="color:#ffffff; text-decoration:underline">View this email in a browser</a> for the best experience
+                </td>
+              </tr>
+            </table>
+            <!--END-->
+
+            <!--LOGO-->
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color:#ffffff">
+              <tr>
+                <td align="center" valign="middle" style="padding:22px 0 22px 0"><a href="http://www.odeon.co.uk" target="_blank" style="border:none"><img src="http://dev.two-uk.com/tr/concepts/odeon-logo.png" width="155" style="width:155px;  border:none" alt="" /></a></td>
+              </tr>
+            </table>
+            <!--END-->
+
+            <!--FILM SELECTOR-->
+            <table id="film-selector" cellspacing="0" cellpadding="0" width="100%" border="0">
+              <tr>
+                <td align="center">
+                  <!--PRIMARY BANNER-->
+                  <table id="defaultBanner" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="center">
+                        <table cellspacing="0" cellpadding="0" border="0" width="650" class="responsive_table" bgcolor="#00bee8" style="background-color:#00bee8">
+                          <tr>
+                            <td style="padding:35px 25px">
+                              <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                  <td align="center" style="font-family: 'Ubuntu', sans-serif; font-weight:bold; text-transform:uppercase; font-size:24px; line-height:28px; color:#ffffff">
+                                    What would you like to watch<br class="hide">
+                                    this weekend, Tom?
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!--END-->
+                  <!--[if !mso]><!-->
+                  <div class="webkit" style="display:none">
+                    <div class="reset-button">
+                    <section>
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td align="center">
+                            <table cellspacing="0" cellpadding="0" border="0" width="650" class="responsive_table" bgcolor="#00bee8" style="background-color:#00bee8">
+                              <tr>
+                                <td style="padding:0 25px 35px 25px">
+                                  <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                      <td align="center">
+                                        <table width="300" cellspacing="0" cellpadding="0" border="0" class="responsive_table" role="presentation" style="border:3px solid #fff">
+                                          <tr>
+                                            <td bgcolor="#001237" height="30">
+                                              <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                <tr>
+                                                  <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:18px; line-height:18px; color:#ffffff; padding: 18px 20px;">
+                                                    <label for="reset">
+                                                      CHOOSE ANOTHER CATEGORY
+                                                    </label>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <!-- cta-->
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </section>
+                    </div>
+                  </div>
+                  <div class="webkit" style="display:none">
+                    <section>
+                      <table id="selector-tiles" cellspacing="0" cellpadding="0" border="0" width="650" class="responsive_table" bgcolor="#ffffff" style="background-color:#FFFFFF">
+                        <tr>
+                          <td class="p30000" style="padding:30px 25px">
+                            <!--FIRST ROW-->
+                             <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                              <tr>
+                                <td align="left">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table border="0" cellspacing="0" cellpadding="0" width="560" role="presentation">
+                                <tr>
+                                <td valign="top">
+                                <![endif]-->
+                                <!-- left column-->
+                                <table class="w25" width="298" align="left" cellspacing="0" cellpadding="0" border="0" >
+                                  <tr>
+                                    <td>
+                                      <label for="action">
+                                        <div>
+                                          <table border="0" cellspacing="0" cellpadding="0" width="100%" >
+                                            <tr>
+                                              <td align="center" valign="top" bgcolor="#ffffff" style="padding:0px; ">
+                                                <table border="0" cellspacing="0" cellpadding="0" width="100%" >
+                                                  <tr>
+                                                    <td  align="center" valign="top" bgcolor="#ffffff" style=" padding:0px; ">
+                                                      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                          <td align="center">
+                                                            <img class="fluid98" src="http://dev.two-uk.com/tr/concepts/action_filmCategory.png" width="298" alt="Action" style="width:100%; height:auto"/>
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                      </label>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td valign="top">
+                                <![endif]-->
+                                <!-- RIGHTCOLUMN -->
+                                <table class="w25" width="298" align="right" cellspacing="0" cellpadding="0" border="0" >
+                                  <tr>
+                                    <td>
+                                      <label for="romance">
+                                        <div>
+                                          <table border="0" cellspacing="0" cellpadding="0" width="100%" >
+                                            <tr>
+                                              <td align="center" valign="top" bgcolor="#ffffff" style="padding:0px; ">
+                                                <table border="0" cellspacing="0" cellpadding="0" width="100%" >
+                                                  <tr>
+                                                    <td  align="center" valign="top" bgcolor="#ffffff" style=" padding:0px; ">
+                                                      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                          <td align="center">
+                                                            <img class="fluid98" src="http://dev.two-uk.com/tr/concepts/romance_filmCategory.png" width="298" alt="Romance" style="width:100%; height:auto"/>
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                      </label>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                <td valign="top">
+                                <![endif]-->
+                                <!-- RIGHTCOLUMN -->
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <table class="w25" width="298" align="left" cellspacing="0" cellpadding="0" border="0" >
+                                    <tr>
+                                      <td>
+                                        <label for="drama">
+                                          <div>
+                                            <table border="0" cellspacing="0" cellpadding="0" width="100%" >
+                                              <tr>
+                                                <td align="center" valign="top" bgcolor="#ffffff" style="padding:0px; ">
+                                                  <table border="0" cellspacing="0" cellpadding="0" width="100%" >
+                                                    <tr>
+                                                      <td  align="center" valign="top" bgcolor="#ffffff" style=" padding:0px; ">
+                                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                          <tr>
+                                                            <td align="center">
+                                                              <img class="fluid98" src="http://dev.two-uk.com/tr/concepts/drama_filmCategory.png" width="298" alt="Drama" style="width:100%; height:auto"/>
+                                                            </td>
+                                                          </tr>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                        </label>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!--[if (gte mso 9)|(IE)]>
+                                  </td>
+                                  <td valign="top">
+                                  <![endif]-->
+                                  <!-- RIGHTCOLUMN -->
+                                  <table class="w25" width="298" align="right" cellspacing="0" cellpadding="0" border="0" >
+                                    <tr>
+                                      <td>
+                                        <label for="family">
+                                          <div>
+                                            <table border="0" cellspacing="0" cellpadding="0" width="100%" >
+                                              <tr>
+                                                <td align="center" valign="top" bgcolor="#ffffff" style="padding:0px; ">
+                                                  <table border="0" cellspacing="0" cellpadding="0" width="100%" >
+                                                    <tr>
+                                                      <td  align="center" valign="top" bgcolor="#ffffff" style=" padding:0px; ">
+                                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                          <tr>
+                                                            <td align="center">
+                                                              <img class="fluid98" src="http://dev.two-uk.com/tr/concepts/family_filmCategory.png" width="298" alt="Family" style="width:100%; height:auto"/>
+                                                            </td>
+                                                          </tr>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                        </label>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!--[if (gte mso 9)|(IE)]>
+                                  </td>
+                                  </tr>
+                                  </table>
+                                  <![endif]-->
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </section>
+                  </div>
+                  <!--<![endif]-->
+                </td>
+              </tr>
+               <tr>
+                <td align="center">
+                  <table class="responsive_table" cellspacing="0" cellpadding="0" border="0" width="650" bgcolor="#ffffff" style="background-color:#FFFFFF">
+                    <tr>
+                      <td align="center">
+                        <table cellspacing="0" cellpadding="0" border="0" width="650" class="responsive_table" bgcolor="#ffffff" style="background-color:#FFFFFF">
+                          <tr>
+                            <td align="left">
+                              <div class="films">
+                                <div class="action-films">
+                                  <table cellspacing="0" cellpadding="0" border="0" width="100%" class="responsive_table">
+                                    <tr>
+                                      <td class="p30000" align="center"><a href="https://www.youtube.com/watch?v=7-zYoocu2Jo" target="_blank" style="border:none; display:block"><img class="fluid" src="http://dev.two-uk.com/tr/concepts/kong_trailer.png" width="650" border="0" alt="" style="border:none; display:block" /></a></td>
+                                    </tr>
+                                  </table>
+                                  <table cellspacing="0" cellpadding="0" border="0" width="100%" class="responsive_table">
+                                    <tr>
+                                      <td style="padding:30px 25px">
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                          <tr>
+                                            <!--FILM POSTER-->
+                                            <td class="hide widthZero" valign="top" style="width:150px"><img class="hide" src="http://dev.two-uk.com/tr/concepts/kong_poster.png" width="150" border="0" alt="" style="width:150px; display:block; border:none" /></td>
+                                            <!--END-->
+                                            <td width="22" style="width:22px" class="hide widthZero"></td>
+                                            <!--FILM DESCRIPTION-->
+                                            <td align="left" valign="top">
+
+                                              <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                  <td align="left" style="font-family:'Ubuntu', sans-serif; font-weight:bold; font-size:18px; line-height:22px; color:#00326f">
+                                                    Kong: Skull Island
+                                                  </td>
+                                                  <td width="112" align="right" class="stars"><img class="stars" src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                </tr>
+                                              </table>
+
+                                              <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                  <td align="left" style="padding:20px 0 20px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001">
+                                                    Updating the legend and bringing it into the modern day, 'Kong: Skull Island' sees a team of explorers travel to an uncharted Pacific island, only to encounter its colossal king.
+                                                    <br><br>
+                                                    A fearsome giant gorilla unlike anything they've ever seen before, Kong mostly keeps to himself, but he's a god to the people on the island.
+                                                  </td>
+                                                </tr>
+                                                <!-- cta-->
+                                                <tr>
+                                                  <td align="left">
+                                                    <table width="120" cellspacing="0" cellpadding="0" border="0" class="responsive_table" role="presentation">
+                                                      <tr>
+                                                        <td bgcolor="#ffa600" height="30">
+                                                          <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                            <tr>
+                                                              <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                                <!-- cta-->
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding:0 25px">
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                          <tr>
+                                            <td align="center" height="1" bgcolor="#dadddf" valign="top" style="font-family:Arial, sans-serif; font-size:1px; font-weight:bold; color:#ffffff; line-height:1px; text-align:center; height:1px; mso-line-height-rule: exactly; width:100%;"><!--[if gte mso 15]>&nbsp;<![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding:30px 25px">
+                                       <!--THREE COLUMN MOVIES-->
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                          <tr>
+                                            <td>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            <table border="0" cellspacing="0" cellpadding="0" width="590" role="presentation">
+                                            <tr>
+                                            <td valign="top" width="200">
+                                            <![endif]-->
+                                            <table class="responsive_table" cellspacing="0" cellpadding="0" align="left" width="200" border="0">
+                                              <tr>
+                                                <td align="center">
+                                                  <table class="responsive_table" cellspacing="0" cellpadding="0" border="0" width="160">
+                                                    <tr>
+                                                      <td align="center"><img class="poster" src="http://dev.two-uk.com/tr/concepts/logan_poster.png" width="160" border="0" alt="" style="width:160px; border:none; display:block" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:10px 0"><img src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:0 0 10px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:12px; font-weight:bold; line-height:16px; color:#001237">Logan</td>
+                                                    </tr>
+                                                    <!-- cta-->
+                                                      <tr>
+                                                        <td class="p00200" align="center">
+                                                          <table width="160" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                            <tr>
+                                                              <td bgcolor="#ffa600" height="30">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                                  <tr>
+                                                                    <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                                    </td>
+                                                                  </tr>
+                                                                </table>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                      <!-- cta-->
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                            <td valign="top" width="200">
+                                            <![endif]-->
+                                            <table class="responsive_table" cellspacing="0" cellpadding="0" align="left" width="200" border="0">
+                                              <tr>
+                                                <td align="center">
+                                                  <table class="responsive_table" cellspacing="0" cellpadding="0" border="0" width="160">
+                                                    <tr>
+                                                      <td align="center"><img class="poster" src="http://dev.two-uk.com/tr/concepts/johnwick_poster.png" width="160" border="0" alt="" style="width:160px; border:none; display:block" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:10px 0"><img src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:0 0 10px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:12px; font-weight:bold; line-height:16px; color:#001237">John Wick</td>
+                                                    </tr>
+                                                    <!-- cta-->
+                                                      <tr>
+                                                        <td class="p00200" align="center">
+                                                          <table width="160" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                            <tr>
+                                                              <td bgcolor="#ffa600" height="30">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                                  <tr>
+                                                                    <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                                    </td>
+                                                                  </tr>
+                                                                </table>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                      <!-- cta-->
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                            <td valign="top" width="200">
+                                            <![endif]-->
+                                            <table class="responsive_table" cellspacing="0" cellpadding="0" align="right" width="200" border="0">
+                                              <tr>
+                                                <td align="center">
+                                                  <table class="responsive_table" cellspacing="0" cellpadding="0" width="160" border="0">
+                                                    <tr>
+                                                      <td align="center"><img class="poster" src="http://dev.two-uk.com/tr/concepts/jackreacher_poster.png" width="160" border="0" alt="" style="width:160px; border:none; display:block" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:10px 0"><img src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:0 0 10px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:12px; font-weight:bold; line-height:16px; color:#001237">Jack Reacher</td>
+                                                    </tr>
+                                                    <!-- cta-->
+                                                      <tr>
+                                                        <td class="p00200" align="center">
+                                                          <table width="160" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                            <tr>
+                                                              <td bgcolor="#ffa600" height="30">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                                  <tr>
+                                                                    <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                                    </td>
+                                                                  </tr>
+                                                                </table>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                      <!-- cta-->
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                            </tr>
+                                            </table>
+                                            <![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                       <!--END-->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+
+                                <div class="romance-films">
+                                  <table cellspacing="0" cellpadding="0" border="0" width="100%" class="responsive_table">
+                                    <tr>
+                                      <td class="p30000" align="center"><a href="#" target="_blank" style="border:none; display:block"><img class="fluid" src="http://dev.two-uk.com/tr/concepts/fiftyshades_trailer.png" width="650" border="0" alt="" style="border:none; display:block" /></a></td>
+                                    </tr>
+                                  </table>
+                                  <table cellspacing="0" cellpadding="0" border="0" width="100%" class="responsive_table">
+                                    <tr>
+                                      <td style="padding:30px 25px">
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                          <tr>
+                                            <!--FILM POSTER-->
+                                            <td class="hide widthZero" valign="top" style="width:150px"><img class="hide" src="http://dev.two-uk.com/tr/concepts/fiftyshades_poster.png" width="150" border="0" alt="" style="width:150px; display:block; border:none" /></td>
+                                            <!--END-->
+                                            <td width="22" style="width:22px" class="hide widthZero"></td>
+                                            <!--FILM DESCRIPTION-->
+                                            <td align="left" valign="top">
+
+                                              <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                  <td align="left" style="font-family:'Ubuntu', sans-serif; font-weight:bold; font-size:18px; line-height:22px; color:#00326f">
+                                                    Fifty Shades Darker
+                                                  </td>
+                                                  <td width="112" align="right" class="stars"><img class="stars" src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                </tr>
+                                              </table>
+
+                                              <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                  <td align="left" style="padding:20px 0 20px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001">
+                                                    After breaking up with Christian, Ana is trying to move on from their relationship. But events turn 'Fifty Shades Darker' when he reappears, wanting her back in his life.
+                                                    <br><br>
+                                                    This time, Ana doesn't want any rules, any punishments, or any secrets. But that might prove difficult as the demons in Christian's past - and the other women he's been with - come back to haunt him.</td>
+                                                </tr>
+                                                <!-- cta-->
+                                                <tr>
+                                                  <td align="left">
+                                                    <table width="120" cellspacing="0" cellpadding="0" border="0" class="responsive_table" role="presentation">
+                                                      <tr>
+                                                        <td bgcolor="#ffa600" height="30">
+                                                          <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                            <tr>
+                                                              <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                                <!-- cta-->
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding:0 25px">
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                          <tr>
+                                            <td align="center" height="1" bgcolor="#dadddf" valign="top" style="font-family:Arial, sans-serif; font-size:1px; font-weight:bold; color:#ffffff; line-height:1px; text-align:center; height:1px; mso-line-height-rule: exactly; width:100%;"><!--[if gte mso 15]>&nbsp;<![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding:30px 25px">
+                                       <!--THREE COLUMN MOVIES-->
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                          <tr>
+                                            <td>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            <table border="0" cellspacing="0" cellpadding="0" width="590" role="presentation">
+                                            <tr>
+                                            <td valign="top" width="200">
+                                            <![endif]-->
+                                            <table class="responsive_table" cellspacing="0" cellpadding="0" align="left" width="200" border="0">
+                                              <tr>
+                                                <td align="center">
+                                                  <table class="responsive_table" cellspacing="0" cellpadding="0" border="0" width="160">
+                                                    <tr>
+                                                      <td align="center"><img class="poster" src="http://dev.two-uk.com/tr/concepts/lalaland_poster.png" width="160" border="0" alt="" style="width:160px; border:none; display:block" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:10px 0"><img src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:0 0 10px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:12px; font-weight:bold; line-height:16px; color:#001237">La La Land</td>
+                                                    </tr>
+                                                    <!-- cta-->
+                                                      <tr>
+                                                        <td class="p00200" align="center">
+                                                          <table width="160" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                            <tr>
+                                                              <td bgcolor="#ffa600" height="30">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                                  <tr>
+                                                                    <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                                    </td>
+                                                                  </tr>
+                                                                </table>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                      <!-- cta-->
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                            <td valign="top" width="200">
+                                            <![endif]-->
+                                            <table class="responsive_table" cellspacing="0" cellpadding="0" align="left" width="200" border="0">
+                                              <tr>
+                                                <td align="center">
+                                                  <table class="responsive_table" cellspacing="0" cellpadding="0" border="0" width="160">
+                                                    <tr>
+                                                      <td align="center"><img class="poster" src="http://dev.two-uk.com/tr/concepts/beautybeast_poster.png" width="160" border="0" alt="" style="width:160px; border:none; display:block" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:10px 0"><img src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:0 0 10px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:12px; font-weight:bold; line-height:16px; color:#001237">Beauty &amp; The Beast</td>
+                                                    </tr>
+                                                    <!-- cta-->
+                                                      <tr>
+                                                        <td class="p00200" align="center">
+                                                          <table width="160" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                            <tr>
+                                                              <td bgcolor="#ffa600" height="30">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                                  <tr>
+                                                                    <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                                    </td>
+                                                                  </tr>
+                                                                </table>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                      <!-- cta-->
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                            <td valign="top" width="200">
+                                            <![endif]-->
+                                            <table class="responsive_table" cellspacing="0" cellpadding="0" align="right" width="200" border="0">
+                                              <tr>
+                                                <td align="center">
+                                                  <table class="responsive_table" cellspacing="0" cellpadding="0" width="160" border="0">
+                                                    <tr>
+                                                      <td align="center"><img class="poster" src="http://dev.two-uk.com/tr/concepts/spacebetween_poster.png" width="160" border="0" alt="" style="width:160px; border:none; display:block" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:10px 0"><img src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:0 0 10px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:12px; font-weight:bold; line-height:16px; color:#001237">Space Between Us</td>
+                                                    </tr>
+                                                    <!-- cta-->
+                                                      <tr>
+                                                        <td class="p00200" align="center">
+                                                          <table width="160" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                            <tr>
+                                                              <td bgcolor="#ffa600" height="30">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                                  <tr>
+                                                                    <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                                    </td>
+                                                                  </tr>
+                                                                </table>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                      <!-- cta-->
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                            </tr>
+                                            </table>
+                                            <![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                       <!--END-->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+
+                                <div class="drama-films">
+                                  <table cellspacing="0" cellpadding="0" border="0" width="100%" class="responsive_table">
+                                    <tr>
+                                      <td class="p30000" align="center"><a href="#" target="_blank" style="border:none; display:block"><img class="fluid" src="http://dev.two-uk.com/tr/concepts/hiddenfigs_trailer.png" width="650" border="0" alt="" style="border:none; display:block" /></a></td>
+                                    </tr>
+                                  </table>
+                                  <table cellspacing="0" cellpadding="0" border="0" width="100%" class="responsive_table">
+                                    <tr>
+                                      <td style="padding:30px 25px">
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                          <tr>
+                                            <!--FILM POSTER-->
+                                            <td class="hide widthZero" valign="top" style="width:150px"><img class="hide" src="http://dev.two-uk.com/tr/concepts/hiddenfigs_poster.png" width="150" border="0" alt="" style="width:150px; display:block; border:none" /></td>
+                                            <!--END-->
+                                            <td width="22" style="width:22px" class="hide widthZero"></td>
+                                            <!--FILM DESCRIPTION-->
+                                            <td align="left" valign="top">
+
+                                              <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                  <td align="left" style="font-family:'Ubuntu', sans-serif; font-weight:bold; font-size:18px; line-height:22px; color:#00326f">Hidden Figures</td>
+                                                  <td width="112" align="right" class="stars"><img class="stars" src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                </tr>
+                                              </table>
+
+                                              <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                  <td align="left" style="padding:20px 0 20px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001">
+                                                    Hidden Figures' is the inspiring true story of Dorothy Vaughan, Mary Jackson and Katherine Johnson, three African-American women who played a pivotal role in the birth of NASA's space program.
+                                                    <br><br>
+                                                    Experience the untold story of these 'Hidden Figures' for yourself, brought to life by a stellar cast including Taraji P. Henson, Octavia Spencer and Janelle Monae.
+                                                  </td>
+                                                </tr>
+                                                <!-- cta-->
+                                                <tr>
+                                                  <td align="left">
+                                                    <table width="120" cellspacing="0" cellpadding="0" border="0" class="responsive_table" role="presentation">
+                                                      <tr>
+                                                        <td bgcolor="#ffa600" height="30">
+                                                          <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                            <tr>
+                                                              <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                                <!-- cta-->
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding:0 25px">
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                          <tr>
+                                            <td align="center" height="1" bgcolor="#dadddf" valign="top" style="font-family:Arial, sans-serif; font-size:1px; font-weight:bold; color:#ffffff; line-height:1px; text-align:center; height:1px; mso-line-height-rule: exactly; width:100%;"><!--[if gte mso 15]>&nbsp;<![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding:30px 25px">
+                                       <!--THREE COLUMN MOVIES-->
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                          <tr>
+                                            <td>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            <table border="0" cellspacing="0" cellpadding="0" width="590" role="presentation">
+                                            <tr>
+                                            <td valign="top" width="200">
+                                            <![endif]-->
+                                            <table class="responsive_table" cellspacing="0" cellpadding="0" align="left" width="200" border="0">
+                                              <tr>
+                                                <td align="center">
+                                                  <table class="responsive_table" cellspacing="0" cellpadding="0" border="0" width="160">
+                                                    <tr>
+                                                      <td align="center"><img class="poster" src="http://dev.two-uk.com/tr/concepts/fences_poster.png" width="160" border="0" alt="" style="width:160px; border:none; display:block" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:10px 0"><img src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:0 0 10px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:12px; font-weight:bold; line-height:16px; color:#001237">Fences</td>
+                                                    </tr>
+                                                    <!-- cta-->
+                                                      <tr>
+                                                        <td class="p00200" align="center">
+                                                          <table width="160" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                            <tr>
+                                                              <td bgcolor="#ffa600" height="30">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                                  <tr>
+                                                                    <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                                    </td>
+                                                                  </tr>
+                                                                </table>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                      <!-- cta-->
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                            <td valign="top" width="200">
+                                            <![endif]-->
+                                            <table class="responsive_table" cellspacing="0" cellpadding="0" align="left" width="200" border="0">
+                                              <tr>
+                                                <td align="center">
+                                                  <table class="responsive_table" cellspacing="0" cellpadding="0" border="0" width="160">
+                                                    <tr>
+                                                      <td align="center"><img class="poster" src="http://dev.two-uk.com/tr/concepts/jackie_poster.png" width="160" border="0" alt="" style="width:160px; border:none; display:block" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:10px 0"><img src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:0 0 10px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:12px; font-weight:bold; line-height:16px; color:#001237">Jackie</td>
+                                                    </tr>
+                                                    <!-- cta-->
+                                                      <tr>
+                                                        <td class="p00200" align="center">
+                                                          <table width="160" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                            <tr>
+                                                              <td bgcolor="#ffa600" height="30">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                                  <tr>
+                                                                    <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                                    </td>
+                                                                  </tr>
+                                                                </table>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                      <!-- cta-->
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                            <td valign="top" width="200">
+                                            <![endif]-->
+                                            <table class="responsive_table" cellspacing="0" cellpadding="0" align="right" width="200" border="0">
+                                              <tr>
+                                                <td align="center">
+                                                  <table class="responsive_table" cellspacing="0" cellpadding="0" width="160" border="0">
+                                                    <tr>
+                                                      <td align="center"><img class="poster" src="http://dev.two-uk.com/tr/concepts/lion_poster.png" width="160" border="0" alt="" style="width:160px; border:none; display:block" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:10px 0"><img src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:0 0 10px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:12px; font-weight:bold; line-height:16px; color:#001237">Lion</td>
+                                                    </tr>
+                                                    <!-- cta-->
+                                                      <tr>
+                                                        <td class="p00200" align="center">
+                                                          <table width="160" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                            <tr>
+                                                              <td bgcolor="#ffa600" height="30">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                                  <tr>
+                                                                    <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                                    </td>
+                                                                  </tr>
+                                                                </table>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                      <!-- cta-->
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                            </tr>
+                                            </table>
+                                            <![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                       <!--END-->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+
+                                <div class="family-films">
+                                  <table cellspacing="0" cellpadding="0" border="0" width="100%" class="responsive_table">
+                                    <tr>
+                                      <td class="p30000" align="center"><a href="#" target="_blank" style="border:none; display:block"><img class="fluid" src="http://dev.two-uk.com/tr/concepts/batman_trailer.png" width="650" border="0" alt="" style="border:none; display:block" /></a></td>
+                                    </tr>
+                                  </table>
+                                  <table cellspacing="0" cellpadding="0" border="0" width="100%" class="responsive_table">
+                                    <tr>
+                                      <td style="padding:30px 25px">
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                          <tr>
+                                            <!--FILM POSTER-->
+                                            <td class="hide widthZero" valign="top" style="width:150px"><img class="hide" src="http://dev.two-uk.com/tr/concepts/batman_poster.png" width="150" border="0" alt="" style="width:150px; display:block; border:none" /></td>
+                                            <!--END-->
+                                            <td width="22" style="width:22px" class="hide widthZero"></td>
+                                            <!--FILM DESCRIPTION-->
+                                            <td align="left" valign="top">
+
+                                              <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                  <td align="left" style="font-family:'Ubuntu', sans-serif; font-weight:bold; font-size:18px; line-height:22px; color:#00326f">
+                                                    The Lego Batman Movie
+                                                  </td>
+                                                  <td width="112" align="right" class="stars"><img class="stars" src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                </tr>
+                                              </table>
+
+                                              <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                  <td align="left" style="padding:20px 0 20px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001">
+                                                    It's time to experience Batman's awesome world in 'The LEGO Batman Movie'. He has millions of dollars, all the gadgets money can buy, and a sweet (very dark) costume.
+                                                    <br><br>
+                                                    But now, to his horror, he has a responsibility – to look after the orphan boy he accidentally adopted. And how better to do that than by taking him on as a sidekick?
+                                                  </td>
+                                                </tr>
+                                                <!-- cta-->
+                                                <tr>
+                                                  <td align="left">
+                                                    <table width="120" cellspacing="0" cellpadding="0" border="0" class="responsive_table" role="presentation">
+                                                      <tr>
+                                                        <td bgcolor="#ffa600" height="30">
+                                                          <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                            <tr>
+                                                              <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                                <!-- cta-->
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding:0 25px">
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                          <tr>
+                                            <td align="center" height="1" bgcolor="#dadddf" valign="top" style="font-family:Arial, sans-serif; font-size:1px; font-weight:bold; color:#ffffff; line-height:1px; text-align:center; height:1px; mso-line-height-rule: exactly; width:100%;"><!--[if gte mso 15]>&nbsp;<![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding:30px 25px">
+                                       <!--THREE COLUMN MOVIES-->
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                          <tr>
+                                            <td>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            <table border="0" cellspacing="0" cellpadding="0" width="590" role="presentation">
+                                            <tr>
+                                            <td valign="top" width="200">
+                                            <![endif]-->
+                                            <table class="responsive_table" cellspacing="0" cellpadding="0" align="left" width="200" border="0">
+                                              <tr>
+                                                <td align="center">
+                                                  <table class="responsive_table" cellspacing="0" cellpadding="0" border="0" width="160">
+                                                    <tr>
+                                                      <td align="center"><img class="poster" src="http://dev.two-uk.com/tr/concepts/moana_poster.png" width="160" border="0" alt="" style="width:160px; border:none; display:block" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:10px 0"><img src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:0 0 10px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:12px; font-weight:bold; line-height:16px; color:#001237">Moana</td>
+                                                    </tr>
+                                                    <!-- cta-->
+                                                      <tr>
+                                                        <td class="p00200" align="center">
+                                                          <table width="160" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                            <tr>
+                                                              <td bgcolor="#ffa600" height="30">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                                  <tr>
+                                                                    <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                                    </td>
+                                                                  </tr>
+                                                                </table>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                      <!-- cta-->
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                            <td valign="top" width="200">
+                                            <![endif]-->
+                                            <table class="responsive_table" cellspacing="0" cellpadding="0" align="left" width="200" border="0">
+                                              <tr>
+                                                <td align="center">
+                                                  <table class="responsive_table" cellspacing="0" cellpadding="0" border="0" width="160">
+                                                    <tr>
+                                                      <td align="center"><img class="poster" src="http://dev.two-uk.com/tr/concepts/ballerina_poster.png" width="160" border="0" alt="" style="width:160px; border:none; display:block" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:10px 0"><img src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:0 0 10px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:12px; font-weight:bold; line-height:16px; color:#001237">Ballerina</td>
+                                                    </tr>
+                                                    <!-- cta-->
+                                                      <tr>
+                                                        <td class="p00200" align="center">
+                                                          <table width="160" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                            <tr>
+                                                              <td bgcolor="#ffa600" height="30">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                                  <tr>
+                                                                    <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                                    </td>
+                                                                  </tr>
+                                                                </table>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                      <!-- cta-->
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                            <td valign="top" width="200">
+                                            <![endif]-->
+                                            <table class="responsive_table" cellspacing="0" cellpadding="0" align="right" width="200" border="0">
+                                              <tr>
+                                                <td align="center">
+                                                  <table class="responsive_table" cellspacing="0" cellpadding="0" width="160" border="0">
+                                                    <tr>
+                                                      <td align="center"><img class="poster" src="http://dev.two-uk.com/tr/concepts/trolls_poster.png" width="160" border="0" alt="" style="width:160px; border:none; display:block" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:10px 0"><img src="http://dev.two-uk.com/tr/concepts/stars_4half.png" width="112" style="border:none; display:block" alt="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td align="center" style="padding:0 0 10px 0; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:12px; font-weight:bold; line-height:16px; color:#001237">Trolls</td>
+                                                    </tr>
+                                                    <!-- cta-->
+                                                      <tr>
+                                                        <td class="p00200" align="center">
+                                                          <table width="160" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                                            <tr>
+                                                              <td bgcolor="#ffa600" height="30">
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0" height="30" >
+                                                                  <tr>
+                                                                    <td align="center" style="mso-line-height-rule: exactly; font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001; padding: 12px 20px;"><a style="color: #ffffff; text-decoration: none; display: inline-block;" title="" target="_blank" href="#"><span style="font-family:'Ubuntu', sans-serif; font-weight:normal; font-size:14px; line-height:18px; color:#000001;">Book Now</span></a>
+                                                                    </td>
+                                                                  </tr>
+                                                                </table>
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                      <!-- cta-->
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                            </td>
+                                            </tr>
+                                            </table>
+                                            <![endif]-->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                       <!--END-->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <!--END-->
+                  </table>
+                  <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" style="padding:30px 0 0 0">
+                        <table cellspacing="0" cellpadding="0" border="0" width="135">
+                          <tr>
+                            <td><img src="http://hosting.two-uk.com/testing/tom/experimental-code/odeon-interactive-email/twitter.png" alt="" style="display:block;width:23px; border:none;" border="0" width="23" /></td>
+                            <td><img src="http://hosting.two-uk.com/testing/tom/experimental-code/odeon-interactive-email/facebook.png" alt="" style="display:block;width:13px; border:none;" border="0" width="13" /></td>
+                            <td><img src="http://hosting.two-uk.com/testing/tom/experimental-code/odeon-interactive-email/youtube.png" alt="" style="display:block;width:19px; border:none;" border="0" width="19" /></td>
+                            <td><img src="http://hosting.two-uk.com/testing/tom/experimental-code/odeon-interactive-email/apple.png" alt="" style="display:block;width:17px; border:none;" border="0" width="17" /></td>
+                            <td><img src="http://hosting.two-uk.com/testing/tom/experimental-code/odeon-interactive-email/android.png" alt="" style="display:block;width:16px; border:none;" border="0" width="16" /></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center">
+                        <table cellspacing="0" cellpadding="0" border="0" width="500" class="responsive_table">
+                          <tr>
+                            <td align="center" style="padding:15px 15px 30px 15px; font-family: 'Ubuntu', sans-serif; font-size:10px; line-height:14px; color:#ffffff">This email was sent to <a href="mailto:joe.bloggs@fiction.co.uk" style="color:#ffffff; text-decoration:underline">joe.bloggs@fiction.co.uk</a><br /><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit est excepturi earum aliquid ipsam recusandae adipisci, expedita, tempora quod facere odit alias fuga rem asperiores provident, dolorum, voluptas labore sunt.</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
